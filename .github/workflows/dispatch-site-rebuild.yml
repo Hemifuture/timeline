@@ -2,9 +2,10 @@ name: Notify site rebuild when data changes
 
 on:
   push:
-    branches: [main] # 或你的默认分支
+    branches: 
+      - 'main' # 或你的默认分支
     paths:
-      - "all.mw" # 只关心数据目录的变更
+      - 'all.mw' # 只关心数据目录的变更
 
 jobs:
   dispatch:
